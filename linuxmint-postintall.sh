@@ -45,10 +45,15 @@ sudo flatpak install flathub com.google.Chrome -y
 # -----------------------------
 # Google Chrome (.deb fallback)
 # -----------------------------
-echo "[6/9] Installing Google Chrome (DEB)..."
-wget -q https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-sudo dpkg -i google-chrome-stable_current_amd64.deb || sudo apt -f install -y
-rm google-chrome-stable_current_amd64.deb
+echo "[6/9] Installing xrdp for Remote..."
+sudo apt install xrdp -y
+sudo systemctl enable xrdp
+sudo systemctl start xrdp
+
+#echo "[6/9] Installing Google Chrome (DEB)..."
+#wget -q https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+#sudo dpkg -i google-chrome-stable_current_amd64.deb || sudo apt -f install -y
+#rm google-chrome-stable_current_amd64.deb
 
 # -----------------------------
 # CasaOS
