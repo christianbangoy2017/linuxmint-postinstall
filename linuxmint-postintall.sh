@@ -59,6 +59,7 @@ sudo systemctl start xrdp
 # CasaOS
 # -----------------------------
 echo "[7/9] Installing CasaOS..."
+sudo apt install curl -y
 curl -fsSL https://get.casaos.io | sudo bash
 
 # -----------------------------
