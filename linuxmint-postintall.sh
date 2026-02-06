@@ -45,10 +45,18 @@ sudo flatpak install flathub com.google.Chrome -y
 # -----------------------------
 # Google Chrome (.deb fallback)
 # -----------------------------
-echo "[6/9] Installing xrdp for Remote..."
+echo "[6/9a] Installing xrdp for Remote..."
 sudo apt install xrdp -y
 sudo systemctl enable xrdp
 sudo systemctl start xrdp
+
+
+echo "[6/9b] Installing Remmina..."
+sudo apt install snap
+sudo snap install remmina
+
+echo "[6/9b] Installing Bottles..."
+flatpak install flathub com.usebottles.bottles
 
 #echo "[6/9] Installing Google Chrome (DEB)..."
 #wget -q https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
