@@ -56,7 +56,7 @@ sudo apt install snap
 sudo snap install remmina
 
 echo "[6/9b] Installing Bottles..."
-flatpak install flathub com.usebottles.bottles
+flatpak install flathub com.usebottles.bottles -y
 
 #echo "[6/9] Installing Google Chrome (DEB)..."
 #wget -q https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
